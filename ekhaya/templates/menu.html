@@ -2,14 +2,150 @@
 {% load static %}
 
 {% block content %}
+
 <section class="menu-section">
-    <h1 class="menu-title">Our Dishes</h1>
-    <div class="menu-gallery">
-        <img src="{% static 'img/dish.png' %}" alt="Dish" class="menu-img">
-        <img src="{% static 'img/drinks.png' %}" alt="Drinks" class="menu-img">
+
+    <h1 class="menu-title">Our Menu</h1>
+
+
+    <!-- ================= MEALS ================= -->
+
+    <div class="menu-category">
+        <h2 class="category-title">Meals</h2>
+
+        <div class="slider-container">
+            <button class="slider-btn" onclick="slide('meals', -1)">&#8592;</button>
+
+            <div class="slider" id="meals-slider">
+
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.32.jpeg' %}" class="menu-img" alt="Meal 1">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.33.jpeg' %}" class="menu-img" alt="Meal 2">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.34.jpeg' %}" class="menu-img" alt="Meal 3">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.32 (1).jpeg' %}" class="menu-img" alt="Meal 4">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.33 (1).jpeg' %}" class="menu-img" alt="Meal 5">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.35.jpeg' %}" class="menu-img" alt="Meal 7">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.36 (1).jpeg' %}" class="menu-img" alt="Meal 8">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.36.jpeg' %}" class="menu-img" alt="Meal 9">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.37 (1).jpeg' %}" class="menu-img" alt="Meal 10">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.38 (2).jpeg' %}" class="menu-img" alt="Meal 11">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.39 (2).jpeg' %}" class="menu-img" alt="Meal 12">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.40 (3).jpeg' %}" class="menu-img" alt="Meal 13">
+
+            </div>
+
+            <button class="slider-btn" onclick="slide('meals', 1)">&#8594;</button>
+        </div>
     </div>
+
+
+
+    <!-- ================= PRICES ================= -->
+
+    <div class="menu-category">
+    <h2 class="category-title">Prices</h2>
+
+    <div class="slider-container">
+        
+
+        <div class="slider">
+
+            <a href="#price1">
+                <img src="{% static 'img/meals/meal menu.jpeg' %}" class="menu-img" alt="Meals Menu">
+                <span class="price-caption">Click Zoom meals menu</span>
+                
+            </a>
+
+            <a href="#price2">
+                <img src="{% static 'img/softdrinks/softdrinks menu.jpeg' %}" class="menu-img" alt="Softdrinks Menu">
+                <span class="price-caption">Click Zoom soft drinks menu</span>
+            </a>
+
+            <a href="#price3">
+                <img src="{% static 'img/whiskeys/whiskey menu.jpeg' %}" class="menu-img" alt="Whiskey Menu">
+                <span class="price-caption">Click to Zoom Gins & Cocktail menu</span>
+            </a>
+
+        </div>
+
+      
+    </div>
+</div>
+
+
+
+    <!-- ================= GIN & COCKTAILS ================= -->
+
+    <div class="menu-category">
+        <h2 class="category-title">Gin Bottles & Cocktails</h2>
+
+        <div class="slider-container">
+            <button class="slider-btn" onclick="slide('drinks', -1)">&#8592;</button>
+
+            <div class="slider" id="drinks-slider">
+
+                <img src="{% static 'img/whiskeys/cocktail.jpeg' %}" class="menu-img" alt="Cocktail 1">
+                <img src="{% static 'img/whiskeys/WhatsApp Image 2026-03-10 at 10.05.29.jpeg' %}" class="menu-img" alt="Cocktail 5">
+
+                <img src="{% static 'img/whiskeys/cocktail3.jpeg' %}" class="menu-img" alt="Cocktail 3">
+                <img src="{% static 'img/whiskeys/WhatsApp Image 2026-03-10 at 10.05.28.jpeg' %}" class="menu-img" alt="Cocktail 4">
+                <img src="{% static 'img/whiskeys/WhatsApp Image 2026-03-10 at 10.05.28 (1).jpeg' %}" class="menu-img" alt="Cocktail 6">
+                <img src="{% static 'img/whiskeys/WhatsApp Image 2026-03-10 at 10.05.28 (2).jpeg' %}" class="menu-img" alt="Cocktail 5">
+                <img src="{% static 'img/whiskeys/cocktail2.jpeg' %}" class="menu-img" alt="Cocktail 2">
+
+
+            </div>
+
+            <button class="slider-btn" onclick="slide('drinks', 1)">&#8594;</button>
+        </div>
+    </div>
+
+
+
+    <!-- ================= DETAILS ================= -->
+
     <div class="menu-details">
-        <p class="menu-desc">Explore our authentic African cuisine, prepared with warmth and culture.<br>For full menu details, <a href="/contact/" class="menu-link">contact us</a>.</p>
+        <p class="menu-desc">
+            Explore our authentic African cuisine, prepared with warmth and culture.
+            <br>
+            For full menu details,
+            <a href="/contact/" class="menu-link">contact us</a>.
+        </p>
     </div>
+
 </section>
+
+
+
+<script>
+
+function slide(category, direction) {
+
+    const slider = document.getElementById(category + '-slider');
+
+    const scrollAmount = 180;
+
+    slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+
+}
+
+</script>
+<div id="price1" class="zoom-overlay">
+    <a href="#" class="close"></a>
+    <img src="{% static 'img/meals/meal menu.jpeg' %}">
+</div>
+
+<div id="price2" class="zoom-overlay">
+    <a href="#" class="close"></a>
+    <img src="{% static 'img/softdrinks/softdrinks menu.jpeg' %}">
+</div>
+
+<div id="price3" class="zoom-overlay">
+    <a href="#" class="close"></a>
+    <img src="{% static 'img/whiskeys/whiskey menu.jpeg' %}">
+</div>
+
+
 {% endblock %}
