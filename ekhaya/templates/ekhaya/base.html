@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ekhaya African Cuisine</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header class="header-white">
+    <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="Ekhaya Logo" style="height:60px;">
+    </div>
+    <nav>
+        <a class="nav-btn" href="/">Home</a>
+        <a class="nav-btn" href="/about/">About</a>
+        <a class="nav-btn" href="/menu/">Menu</a>
+        <a class="nav-btn" href="/contact/">Contact</a>
+    </nav>
+    <div class="hours">
+        <span>Open: 9am - 6pm | Mon-Sun</span>
+    </div>
+</header>
+
+<div class="content">
+
+{% block content %}
+{% endblock %}
+
+</div>
+<footer class="footer">
+    <p>&copy; 2026 Ekhaya African Cuisine. All rights reserved.</p>
+
+
+</body>
+</html>

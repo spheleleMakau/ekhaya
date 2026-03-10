@@ -1,0 +1,12 @@
+{% extends 'ekhaya/base.html' %}
+
+{% block content %}
+<section class="gallery-section">
+    <h1 style="color:#7a1e1e;">Gallery</h1>
+    <div class="gallery">
+        <img src="{% static 'img/dish.png' %}" alt="Dish" class="gallery-img">
+        <img src="{% static 'img/drinks.png' %}" alt="Drinks" class="gallery-img">
+        <img src="{% static 'img/people.png' %}" alt="People" class="gallery-img">
+    </div>
+</section>
+{% endblock %}

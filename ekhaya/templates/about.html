@@ -1,0 +1,16 @@
+{% extends 'ekhaya/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="about-section" style="text-align:center;">
+    <h1 style="color:#7a1e1e;">About Ekhaya African Cuisine</h1>
+
+    <p style="color:#222; max-width:700px; margin:0 auto;">
+        Ekhaya African Cuisine is dedicated to serving authentic African dishes in a warm, welcoming environment.
+        Our mission is to bring the taste and culture of Africa to Knysna, offering traditional meals, drinks,
+        and hospitality. Visit us for a unique culinary experience!
+    </p>
+
+    <img src="{% static 'img/people.png' %}" alt="Ekhaya Team" class="about-img" style="display:block; margin:30px auto; width:300px;">
+</section>
+{% endblock %}

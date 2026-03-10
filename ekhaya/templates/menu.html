@@ -1,0 +1,15 @@
+{% extends 'ekhaya/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="menu-section">
+    <h1 class="menu-title">Our Dishes</h1>
+    <div class="menu-gallery">
+        <img src="{% static 'img/dish.png' %}" alt="Dish" class="menu-img">
+        <img src="{% static 'img/drinks.png' %}" alt="Drinks" class="menu-img">
+    </div>
+    <div class="menu-details">
+        <p class="menu-desc">Explore our authentic African cuisine, prepared with warmth and culture.<br>For full menu details, <a href="/contact/" class="menu-link">contact us</a>.</p>
+    </div>
+</section>
+{% endblock %}
