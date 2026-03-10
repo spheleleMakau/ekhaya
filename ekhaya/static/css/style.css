@@ -19,7 +19,7 @@ footer {
 .footer-contact a {
 	color: #7a1e1e;
 	text-decoration: underline; */
-}
+
 @media (max-width: 900px) {
 	.features {
 		flex-direction: column;
@@ -47,15 +47,8 @@ footer {
 		height: 35px !important;
 	}
 }
-.footer-contact {
-	color: #222;
-	margin-top: 10px;
-	font-size: 1rem;
-}
-.footer-contact a {
-	color: #7a1e1e;
-	text-decoration: underline;
-}
+/* . */
+
 .menu-section {
 	background: #fff;
 	border-radius: 16px;
@@ -108,7 +101,7 @@ body {
 }
 
 .logo img {
-	height: 60px;
+	height: 80px;
 }
 
 nav {
@@ -208,23 +201,6 @@ nav {
 	border-radius: 8px;
 }
 
-footer {
-	background: #fff;
-	padding: 30px 10px;
-	text-align: center;
-	color: #d4a017;
-	box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
-}
-.footer-images {
-	margin: 10px 0;
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-}
-.footer-hours {
-	color: #d4a017;
-	font-weight: bold;
-	margin-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -247,7 +223,7 @@ footer {
 		min-height: 180px;
 	}
 	.logo img {
-		height: 40px;
+		height: 50px;
 	}
 	.footer-images img {
 		height: 30px;
@@ -265,4 +241,41 @@ footer {
     display:block;
     margin:30px auto;
     width:300px;
+}
+
+/* CONTACT PAGE (same style as other sections) */
+
+.contact-section{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(122,30,30,0.15);
+    padding: 30px 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-title{
+    color:#7a1e1e;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.contact-item strong{
+    color:#7a1e1e;
+}
+
+.contact-item a{
+    color:#d4a017;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
 }
