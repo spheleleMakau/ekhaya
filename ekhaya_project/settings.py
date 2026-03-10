@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-v+w8z5x36xy746cy6yq$o%w5x@c-0b*_#zmt$39h8x=sf=e*$4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ekhaya-arez.onrender.com','localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['ekhaya.com','www.ekhaya.com','https://ekhaya-arez.onrender.com','localhost', '127.0.0.1']
 
 # Application definition
 
