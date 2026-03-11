@@ -138,7 +138,7 @@ footer {
     height:100%;
 }
 body{
-    background: linear-gradient(135deg,#e39a06d1,#474540d3);
+    background: linear-gradient(135deg, #6a2c06 0%, #b97a1a 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
     margin:0;
     padding:0;
@@ -172,6 +172,12 @@ nav{
     color:#7a1e1e;
     font-weight:600;
     font-size:1rem;
+    background: #e0e0e0;
+    border-radius: 6px;
+    padding: 10px 18px;
+    margin: 0 4px;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
 }
 
 .nav-btn:hover{
@@ -180,12 +186,14 @@ nav{
 
 .hours{
     font-size:0.9rem;
-    color:#7a1e1e;
+    color:#d4a017;
     white-space:nowrap;
+    font-weight:600;
+    font-size:1rem;
 }
 
 .logo img{
-    height:80px;
+    height:90px;
 }
 
 .contact-wrapper{
