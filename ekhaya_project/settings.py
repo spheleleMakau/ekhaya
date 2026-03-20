@@ -9,7 +9,7 @@ DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 ALLOWED_HOSTS = [
     "ekhaya.com",
     "www.ekhaya.com",
-    "ekhaya-9oo1.onrender.com/",
+    "ekhaya-9oo1.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
