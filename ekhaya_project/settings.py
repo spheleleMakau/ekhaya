@@ -9,7 +9,7 @@ DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 ALLOWED_HOSTS = [
     "ekhaya.com",
     "www.ekhaya.com",
-    "ekhaya-arez.onrender.com",
+    "ekhaya-9oo1.onrender.com/",
     "localhost",
     "127.0.0.1",
 ]
@@ -17,7 +17,7 @@ ALLOWED_HOSTS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://ekhaya.com",
     "https://www.ekhaya.com",
-    "https://ekhaya-arez.onrender.com",
+    "https://ekhaya-9oo1.onrender.com",
 ]
 
 INSTALLED_APPS = [
