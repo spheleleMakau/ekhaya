@@ -209,7 +209,7 @@ nav {
 .hero {
 	padding: 80px 20px;
 	text-align: center;
-	background: url('../img/about.png') center/cover no-repeat;
+	/* background: url('../img/about.png') center/cover no-repeat; */
 	color: #fff;
 	min-height: 300px;
 	position: relative;
