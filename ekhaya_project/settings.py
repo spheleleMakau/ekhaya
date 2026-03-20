@@ -4,7 +4,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-fallback-key")
-DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = [
     "ekhaya.com",
