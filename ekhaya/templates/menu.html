@@ -3,13 +3,147 @@
 
 {% block content %}
 <section class="menu-section">
-    <h1 class="menu-title">Our Dishes</h1>
-    <div class="menu-gallery">
-        <img src="{% static 'img/dish.png' %}" alt="Dish" class="menu-img">
-        <img src="{% static 'img/drinks.png' %}" alt="Drinks" class="menu-img">
+    <h1 class="menu-title">Our Menu</h1>
+  
+
+    <div class="menu-slider-block">
+        <h2 class="menu-category">Meals</h2>
+        <div class="slider" id="meals-slider">
+            <div class="slide-track">
+                  <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.39.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.32 (1).jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.32.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.33 (1).jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.33 (2).jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.33.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.34.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.35.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.36 (1).jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.36.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.37.jpeg' %}" class="slide-img" alt="Meal">
+                <img src="{% static 'img/meals/WhatsApp Image 2026-03-10 at 10.05.38.jpeg' %}" class="slide-img" alt="Meal">
+              
+               
+            <!-- arrows removed -->
+        </div>
     </div>
+
+    <div class="menu-slider-block" style="text-align:center;">
+        <h2 class="menu-category">Menus</h2>
+        <div style="margin-bottom:8px;color:#7a1e1e;font-weight:bold;">Click to zoom menu</div>
+        <div class="slider" id="menus-slider" style="justify-content:center;">
+            <div class="slide-track" style="justify-content:center;">
+                <img src="{% static 'img/menus/Drinks.jpeg' %}" class="slide-img zoomable-menu" alt="Menu" onclick="zoomMenu(this)" onerror="this.onerror=null;this.alt='Menu not found';this.style.opacity=0.5;">
+                <img src="{% static 'img/menus/meals.jpeg' %}" class="slide-img zoomable-menu" alt="Menu" onclick="zoomMenu(this)" onerror="this.onerror=null;this.alt='Menu not found';this.style.opacity=0.5;">
+                <img src="{% static 'img/menus/Soft drinks.jpeg' %}" class="slide-img zoomable-menu" alt="Menu" onclick="zoomMenu(this)" onerror="this.onerror=null;this.alt='Menu not found';this.style.opacity=0.5;">
+            </div>
+            <!-- arrows removed -->
+        </div>
+
+    <div class="menu-slider-block">
+        <h2 class="menu-category">Drinks</h2>
+        <div class="slider" id="drinks-slider">
+            <div class="slide-track">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.28 (1).jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.28 (2).jpeg' %}" class="slide-img" alt="Drink">
+                 <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.39.jpeg' %}" class="slide-img" alt="Drink">
+                  <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.25.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.40 (1).jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.40.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.04.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.25 (1).jpeg' %}" class="slide-img" alt="Drink">
+            
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.26.jpeg' %}" class="slide-img" alt="Drink">
+                
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.28.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.29.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.38.jpeg' %}" class="slide-img" alt="Drink">
+                <img src="{% static 'img/drinks/WhatsApp Image 2026-03-10 at 10.05.39 (1).jpeg' %}" class="slide-img" alt="Drink">
+               
+            </div>
+            <!-- arrows removed -->
+        </div>
+    </div>
+
+    <div class="menu-slider-block">
+        <h2 class="menu-category">Spices & Sauces</h2>
+        <div class="slider" id="spices-slider">
+            <div class="slide-track">
+                <img src="{% static 'img/spices and sauses/WhatsApp Image 2026-03-10 at 10.05.29 (1).jpeg' %}" class="slide-img" alt="Spice or Sauce">
+                <img src="{% static 'img/spices and sauses/WhatsApp Image 2026-03-10 at 10.05.29.jpeg' %}" class="slide-img" alt="Spice or Sauce">
+                <img src="{% static 'img/spices and sauses/WhatsApp Image 2026-03-10 at 10.05.30 (1).jpeg' %}" class="slide-img" alt="Spice or Sauce">
+                <img src="{% static 'img/spices and sauses/WhatsApp Image 2026-03-10 at 10.05.30.jpeg' %}" class="slide-img" alt="Spice or Sauce">
+            </div>
+            <!-- arrows removed -->
+        </div>
+    </div>
+
+    
+    </div>
+
     <div class="menu-details">
-        <p class="menu-desc">Explore our authentic African cuisine, prepared with warmth and culture.<br>For full menu details, <a href="/contact/" class="menu-link">contact us</a>.</p>
+        <p class="menu-desc">For full menu details or to place an order, <a href="/contact/" class="menu-link">contact us</a>.</p>
     </div>
 </section>
+
+<style>
+.zoom-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+.zoom-modal.active {
+    display: flex;
+}
+.zoom-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #000a;
+    background: #fff;
+}
+.zoom-modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 10001;
+    font-weight: bold;
+    text-shadow: 0 2px 8px #000a;
+}
+</style>
+
+<div id="zoomModal" class="zoom-modal" onclick="closeZoomModal(event)">
+    <span class="zoom-modal-close" onclick="closeZoomModal(event)">&times;</span>
+    <img id="zoomedMenuImg" src="" alt="Zoomed menu">
+</div>
+
+<script>
+function slide(sliderId, direction) {
+        const slider = document.getElementById(sliderId);
+        const track = slider.querySelector('.slide-track');
+        const imgWidth = slider.querySelector('.slide-img').offsetWidth + 24; // 24px gap
+        slider.scrollLeft = slider.scrollLeft + direction * imgWidth;
+}
+
+function zoomMenu(img) {
+        var modal = document.getElementById('zoomModal');
+        var zoomedImg = document.getElementById('zoomedMenuImg');
+        zoomedImg.src = img.src;
+        zoomedImg.alt = img.alt;
+        modal.classList.add('active');
+}
+function closeZoomModal(e) {
+        if (e.target.classList.contains('zoom-modal') || e.target.classList.contains('zoom-modal-close')) {
+                document.getElementById('zoomModal').classList.remove('active');
+        }
+}
+</script>
+
 {% endblock %}
