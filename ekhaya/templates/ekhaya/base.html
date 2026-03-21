@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 
 <header class="header-white">
     <div class="logo">
@@ -23,15 +23,15 @@
     </div>
 </header>
 
-<div class="content">
+<div class="content" style="flex: 1 0 auto;">
 
 {% block content %}
 {% endblock %}
 
 </div>
-<footer class="footer">
+<footer class="footer" style="flex-shrink: 0;">
     <p>&copy; 2026 Ekhaya African Cuisine. All rights reserved.</p>
-
+</footer>
 
 </body>
 </html>
