@@ -15,9 +15,9 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "ekhaya-africancuisine.co.za",
-    "www.ekhaya-africancuisine.co.za",
-    
+    "https://ekhaya-africancuisine.co.za",
+    "https://www.ekhaya-africancuisine.co.za",
+    "https://*.onrender.com",
 ]
 
 INSTALLED_APPS = [
