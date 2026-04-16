@@ -7,17 +7,17 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-fallback-key")
 DEBUG = False# Temporarily enabled for troubleshooting
 
 ALLOWED_HOSTS = [
-    "ekhaya.com",
-    "www.ekhaya.com",
-    "ekhaya-9oo1.onrender.com",
+    "ekhaya-africancuisine.co.za",
+    "www.ekhaya-africancuisine.co.za"
+    "https://ekhaya-ad3o.onrender.com/",
     "localhost",
     "127.0.0.1",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://ekhaya.com",
-    "https://www.ekhaya.com",
-    "https://ekhaya-9oo1.onrender.com",
+    "ekhaya-africancuisine.co.za",
+    "www.ekhaya-africancuisine.co.za",
+    
 ]
 
 INSTALLED_APPS = [
